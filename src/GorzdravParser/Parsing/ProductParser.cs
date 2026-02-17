@@ -40,13 +40,13 @@ public class ProductParser
                     }
                     return '';
                 ", card)?.ToString() ?? "";
-                product.Prescription = prescription;
+                product.Recipe = prescription;
             }
             catch { }
             
             try
             {
-                product.Manufacturer = js.ExecuteScript(@"
+                product.Company = js.ExecuteScript(@"
                     var items = arguments[0].querySelectorAll('.product-card__item');
                     for(var i=0; i<items.length; i++) {
                         if(items[i].textContent.includes('Производитель')) {
@@ -83,7 +83,7 @@ public class ProductParser
                 
                 if (!string.IsNullOrWhiteSpace(priceText))
                 {
-                    product.Price = _priceCleaner.Clean(priceText);
+                    product.CurrentPrice = _priceCleaner.Clean(priceText);
                 }
                 
                 var oldPriceText = js.ExecuteScript(@"

@@ -17,12 +17,12 @@ public class ProductSet
                 {
                     if (string.IsNullOrEmpty(existing.Name) && !string.IsNullOrEmpty(p.Name))
                         existing.Name = p.Name;
-                    if (string.IsNullOrEmpty(existing.Manufacturer) && !string.IsNullOrEmpty(p.Manufacturer))
-                        existing.Manufacturer = p.Manufacturer;
+                    if (string.IsNullOrEmpty(existing.Company) && !string.IsNullOrEmpty(p.Company))
+                        existing.Company = p.Company;
                     if (string.IsNullOrEmpty(existing.Substance) && !string.IsNullOrEmpty(p.Substance))
                         existing.Substance = p.Substance;
-                    if (string.IsNullOrEmpty(existing.Price) && !string.IsNullOrEmpty(p.Price))
-                        existing.Price = p.Price;
+                    if (string.IsNullOrEmpty(existing.CurrentPrice) && !string.IsNullOrEmpty(p.CurrentPrice))
+                        existing.CurrentPrice = p.CurrentPrice;
                 }
                 else
                 {
