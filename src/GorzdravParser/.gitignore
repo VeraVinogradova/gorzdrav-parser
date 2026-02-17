@@ -1,0 +1,37 @@
+```gitignore
+# .NET
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+msbuild.log
+msbuild.err
+msbuild.wrn
+
+# Visual Studio
+.vs/
+.idea/
+*.csproj.user
+*.user
+*.suo
+*.userprefs
+
+# NuGet
+packages/
+*.nupkg
+project.lock.json
+
+# Selenium
+chromedriver.exe
+geckodriver.exe
+
+# OS
+.DS_Store
+Thumbs.db
